@@ -16,11 +16,7 @@ function get_hint() {
 
 function is_a_number() {
 	local re='^[0-9]+$'
-	if [[ $1 =~ $re ]]; then
-		echo 0
-	else
-		echo 1
-	fi
+	[[ $1 =~ $re ]] && echo 0 || echo 1
 }
 
 # main
