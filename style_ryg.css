@@ -1,0 +1,121 @@
+body {
+  background-color: silver;
+}
+
+div.main_box {
+  width: inherit;
+  height: inherit;
+  padding: 1ex 1em;
+  border-color: lightgray;
+  background-color: lightblue;
+}
+
+div.hdr_box {                       /*width: inherit;*/
+  padding-left: 30%;
+  padding-right: 30%;
+}
+div.hdr_box > h1 {
+  text-align: center;
+}
+
+div.ryg_box {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+div.lighter {
+  margin: 1ex 1em;
+  /*padding: 1ex 0em;*/
+  padding-top: 4ex;
+  border: 5px solid black;
+  border-radius:8ex 8ex 10px 10px;
+  background-color: darkgray;
+  width: 10em;
+  display: flex;
+  flex-direction: column;
+}
+
+div.ryg_box > div.lighter > div {
+  overflow: hidden;
+  margin: 1ex 1em;
+  min-width: 7em;
+  min-height: 12ex;
+  border: 3px solid black;
+  border-radius: 45% 45%;
+}
+div.red_light {
+  flex: 3;
+  background-color: darkgray;       /* red;*/
+}
+div.yellow_light {
+  flex: 3;
+  background-color: darkgray;       /* yellow*/
+}
+div.green_light {
+  flex: 3;
+  background-color: darkgray;       /* green;*/
+}
+
+div.cntrl_box {
+  margin: 3ex 0em;
+}
+fieldset {
+  background-color: white;
+    border-radius: 8px;
+}
+
+legend {
+  padding: 0 1em;
+  border: 1px solid darkgray;
+  background-color: white;
+  color: darkgray;
+  /*font-weight: bolder;*/
+  font-family: monospace;
+}
+
+button {
+  width: 8em;
+  font-weight: bold;
+  font-family: monospace;
+  height: 25px;
+  background-color: darkgray;
+  border-radius: 4px;
+}
+input {
+  margin: 0 1em 0;
+}
+
+input#inpTime {
+  margin-left: 1em;
+  width: 6em;
+  font-weight: bold;
+}
+
+div.mode_box {
+  padding: 1ex 0em;
+  display: flex;
+  flex-direction: row;
+}
+
+div.mode_box > div {
+  flex: 1;
+  margin: 1ex 1em;
+}
+div.mode_box > div > span {
+  margin-bottom: 2ex;
+}
+div.centr_panel {
+  padding: 0ex 1em;
+  display: flex;
+  flex-direction: column;
+}
+div.right_panel {
+  border: 1px solid gray;
+  background-color: lightgray;
+  font-family: monospace;
+  font-weight: lighter;
+}
+
+div.centr_panel > span {
+  flex: 3;
+}

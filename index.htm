@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta lang="ru" />
+    <title>Traffic Lighter as Object</title>
+    <link type="text/css" rel="stylesheet" href="style_ryg.css" />
+    <script type="text/javascript" src="lib-OSC.js"></script>
+    <script type="text/javascript" src="script_ryg.js"></script>
+</head>
+
+<body>
+    <div class="hdr_box">
+      <h1>Traffic Lighter – Светофор</h1>
+    </div>
+    <div class="main_box">
+        <div class="ryg_box">
+          <div class="pillar">
+<!-- вертикальная линия -->
+          </div>
+          <div class="lighter">
+            <div id="red" class="red_light"></div>
+            <div id="yellow" class="yellow_light"></div>
+            <div id="green" class="green_light"></div>
+          </div>
+        </div>
+        <div class="cntrl_box">
+          <!-- <form id='cntrl_form'> -->
+            <fieldset><legend accesskey="c">Control panel</legend>
+              <!-- <span id='state'>Off: <input type='radio' checked="checked" /></span> -->
+              <span>power Off: <input id='power' type='checkbox' accesskey="o"/></span>
+            <!-- <input id="timer" type="text" value=0 readonly="readonly" /> -->
+            <!-- <br /> -->
+              <div class="mode_box">
+                <div class='left_panel'>
+                  <span>
+                    Period:<input id="inpTime" type="number" step='100' value='910' />
+                  </span>
+                </div>
+                <div class='centr_panel'>
+                  <span id="Test">
+                    <button id="Test_mode">Test ready</button>
+                  </span>
+                  <span id="Work">
+                    <button id="Work_mode">Start</button>
+                  </span>
+                  <span id="Keep">
+                    <button id="Keep_mode">Keep watch</button>
+                  </span>
+                </div>
+                <div id='out_box' class='right_panel'>
+                  <p id='timer'></p>
+                  <p id='log'></p>
+                </div>
+              </div>
+            </fieldset>
+          <!-- </form> -->
+        </div>
+    </div>
+
+</body>
+</html>
